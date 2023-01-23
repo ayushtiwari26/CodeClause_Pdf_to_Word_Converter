@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Pdf to Doc Converter</title>
+  <style>
+    body {background-color: white;
+        font-family: verdana;
+        font-size: 200%;}
+    h1   {color: blue;
+            text-decoration: underline;}
+    p    {color: green;}
+    div {
+          margin-top: 7%;
+        padding: 2%;
+        background-color:bisque;}
+    
+    </style>
+    </head>
+</head>
+<body>
+<center>
+<div class="container">
+  <h1 style="color:darkslategrey; font-weight:900;">Pdf to Doc Converter</h1>
+  <p>Convert your PDF to WORD documents with incredible accuracy.</p>
+
+  <h2 style="color:red;">Upload pdf</h2>
+
+  <form class="form-inline" action="/index" method="POST" enctype="multipart/form-data">
+    <div class="div" >
+        <label>Select your pdf:</label>
+        <input style="
+        background-color: black;
+        border: 1px solid #ddd;
+        color: white;
+      " class="form-control" type="file" name="filename"><br>
+        <hr>
+        <label>Convert it to word:</label>
+        <input style="padding: 10px 20px;
+        background-color: dodgerblue;
+        border: 1px solid #ddd;
+        color: white;
+        border-radius: 20px;" type="submit" value="Upload">
+    </div>
+
+ </form>
+</div>
+</center>
+
+</body>
+</html>
